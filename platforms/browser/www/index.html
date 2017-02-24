@@ -1,60 +1,150 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-
-<head>
+  <head>
+    <meta charset="utf-8">
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link rel="stylesheet" href="./css/hoja_estilo.css">
+    <title>Squared Beer</title>
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
-</head>
-
-<body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
+    <!-- Angular materialize -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  </head>
+  <body>
+  <div class="app">
+    <div id="cabecera">
+    <header>
+      <img src="">
+    </header>
     </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-</body>
+        <!------------------------------------------------>
+        <div class="col s6 m7">
+         <h2 class="header">Paulaner</h2>
+         <div class="card horizontal">
+           <div class="card-image">
+             <img src="./picture/Paulaner.png" width="90px" height="90px"/>
+           </div>
+           <div class="card-stacked">
+             <div class="card-content">
+               <p>Cerveza Alemana de trigo.</p>
+             </div>
+             <div class="card-action">
+               <a href="cerveza1.html" id="titulos" style="color:#111" > Ver Detalle </a>
+               <img id="banderas" src="./picture/alemania.png"><span>Alemania</span></img>
+             </div>
+           </div>
+         </div>
+       </div>
 
+       <!------------------------------------------------>
+       <div class="col s6 m7">
+        <h2 class="header">Cruzcampo Gran Reserva</h2>
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="./picture/CruzCmpoGranReserva.png" width="35px" height="35px"/>
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>Cerveza Española de cebada.</p>
+            </div>
+            <div class="card-action">
+              <a href="cerveza2.html" id="titulos" style="color:#111" > Ver Detalle </a>
+              <img id="banderas" src="./picture/espana.png"><span>España</span></img>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------------>
+      <div class="col s6 m7">
+       <h2 class="header">Guinnes</h2>
+       <div class="card horizontal">
+         <div class="card-image">
+           <img src="./picture/Guinnes.png" width="90px" height="90px"/>
+         </div>
+         <div class="card-stacked">
+           <div class="card-content">
+             <p>Cerveza irlandesa.</p>
+           </div>
+           <div class="card-action">
+             <a href="cerveza3.html" id="titulos" style="color:#111" > Ver Detalle </a>
+             <img id="banderas" src="./picture/irlanda.png"><span>Irlanda</span></img>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!------------------------------------------------>
+     <div class="col s6 m7">
+      <h2 class="header">Sapporo</h2>
+      <div class="card horizontal">
+        <div class="card-image">
+          <img src="./picture/Paulaner.png" width="90px" height="90px"/>
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>Cerveza Japonesa.</p>
+          </div>
+          <div class="card-action">
+            <a href="cerveza4.html" id="titulos" style="color:#111" > Ver Detalle </a>
+            <img id="banderas" src="./picture/japon.png"><span>Japón</span></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------------------>
+    <div class="col s6 m7">
+     <h2 class="header">Pale Ale</h2>
+     <div class="card horizontal">
+       <div class="card-image">
+         <img src="./picture/CervezaLondres.png" width="90px" height="90px"/>
+       </div>
+       <div class="card-stacked">
+         <div class="card-content">
+           <p>Cerveza Alemana de trigo.</p>
+         </div>
+         <div class="card-action">
+           <a href="cerveza5.html" id="titulos" style="color:#111" > Ver Detalle </a>
+           <img id="banderas" src="./picture/reino-unido.png"><span>Reino Unido</span></img>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!------------------------------------------------>
+   <div class="col s6 m7">
+    <h2 class="header">Nestro Azzurro</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="./picture/cerveza-italiana-peroni-nastro-azzurri-33cl.NFJ0cFl3eVRWblBua3RBVy8vMTM3NTExMTMzNS8.png" width="90px" height="90px"/>
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Cerveza Alemana de trigo.</p>
+        </div>
+        <div class="card-action">
+          <a href="cerveza6.html" id="titulos" style="color:#111" > Ver Detalle </a>
+          <img id="banderas" src="./picture/italia.png"><span>Italia</span></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    </ul>
+  </div>
+   <script type="text/javascript" src="cordova.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+   <script type="text/javascript">
+       app.initialize();
+ </script>
+
+  </body>
 </html>
